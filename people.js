@@ -42,12 +42,13 @@ const result = userInfo();
 console.log(result);
 
 
-// 4. BONUS
+// 4. BONUS inserisco i valori "Nome" "Cognome" "hobbyOne" "hobbyTwo" "hobbyThree" come argomenti passati dal terminale. Nel caso non passassi questi parametri stampo stringhe di default come: "Nome non inserito", "hobby 1 non inserito"
 
 console.log("------------ BONUS -------------");
 
-
+// Funzione che costruisce l'oggetto in base ai parametri inseriti come argomento sul terminale
 function userInfoWithArgs() {
+    // con l'operatore Nullish coalescing verifico se sono stati inseriti gli argomenti, in caso contrario assegno stringhe di default
     const user = names.objectReturn(process.argv[2] ?? "Nome non inserito", process.argv[3] ?? "Cognome non inserito");
     // console.log("Oggetto: ", user);
     const fullName = user.firstName + " " + user.lastName;
