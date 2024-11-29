@@ -13,6 +13,6 @@ function hobby(hobbyOne, hobbyTwo, hobbyThree) {
 // console.log(varHobby.hobbies[2]);
 
 // 2. Esporto la funzione dal file
-MediaSourceHandle.exports = {
-    hobbies
+module.exports = {
+    hobby,
 };
